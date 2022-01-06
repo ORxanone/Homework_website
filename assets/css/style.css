@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .top_bar {
+    background-color: #f6f6f8;
+    padding: 10px 0;
+}
+
+header .top_bar .row_bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #878787;
+}
+
+header .top_bar .row_bar .row_item span.discount {
+    color: #E91E63;
+}
+
+header .top_bar .row_bar .row_item.currency span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .top_bar .row_bar .row_item.currency img {
+    width: 16px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+header .header_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header .header_menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .header_menu ul li a {
+    display: block;
+    color: #222;
+    position: relative;
+    text-decoration: none;
+}
+
+header .header_menu ul.top_menu_list li a {
+    padding: 5px 20px;
+}
+
+header .header_menu ul.top_not_list li a {
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+header .header_menu .top_menu_list li a span {
+    color: white;
+    padding: 2px 3px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    right: -6px;
+    font-size: 12px;
+}
+
+header .header_menu .top_menu_list li a span.new {
+    background-color: #01BAD4;
+}
+
+header .header_menu .top_menu_list li a span.sale {
+    background-color: #FFA800;
+}
+
+
+/* main start */
+
+main .top_img {
+    background-image: url('../img/shopping-cart-head.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 180px;
+    background-position: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_form {
+    padding: 35px 0;
+}
+
+.product_form .card_item {
+    align-items: center;
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 40px 0;
+}
+
+.product_form .card_item .row_element {
+    display: flex;
+    align-items: center;
+}
+
+.product_form .card_item .row_element .item_element_content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.product_form .card_item .row_element .item_element_content a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.product_form .card_item .count_product {
+    border: 1px solid #222;
+    border-radius: 15px;
+    padding: 5px 10px;
+    width: 100px;
+}
+
+.product_form .card_item .count_product input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.product_form .note label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product_form .note textarea {
+    padding: 10px;
+    width: 100%;
+}
+
+.product_form .coupon {
+    margin-top: 20px;
+}
+
+.product_form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product_form .coupon p {
+    margin-bottom: 15px;
+}
+
+.product_form .coupon input {
+    padding: 10px;
+}
+
+.product_form .subtotal {
+    color: #222;
+    text-align: right;
+}
+
+.product_form .subtotal p {
+    margin-bottom: 20px;
+}
+
+.product_form .large_button {
+    min-width: 280px;
+    text-align: center;
+    background: #56CFE1;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.product_form .subtotal img {
+    width: 280px;
+}
+
+.product_form .subtotal_item {
+    align-self: flex-start;
+}
+
+.product_form .estimate_shipping select,
+.product_form .estimate_shipping input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #e3e3e3;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.product_form .estimate_shipping .large_button {
+    margin: 0;
+    margin-top: 30px;
+}
+
+
+/* also like slider */
+
+.products {
+    padding: 35px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.products .boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products .boxes .box {
+    width: 22%;
+}
+
+.products .boxes .box .item_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.products .boxes .box .item_img img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transition: all 1.4s ease;
+}
+
+.products .boxes .box .item_img .overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .boxes .box .item_img .overlay .quick {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.products .boxes .box .item_img:hover .overlay .quick {
+    visibility: initial;
+    opacity: 1;
+    top: 0;
+}
+
+.products .boxes .box .item_img .overlay .quick a {
+    padding: 10px 25px;
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    color: #222;
+    text-decoration: none;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.products .boxes .box h3 a {
+    color: #222;
+    font-size: 18px;
+}
+
+
+/* main end */
+
+
+/*footer */
+
+footer {
+    background-color: #F6F6F8;
+    padding-top: 80px;
+}
+
+.footer h3 {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.footer ul li a,
+.footer ul li {
+    color: #878787;
+    text-decoration: none;
+}
+
+.footer h3+ul li {
+    padding: 8px 0;
+}
+
+.footer ul.f_social_list {
+    display: flex;
+}
+
+.footer ul.f_social_list li {
+    margin-right: 15px;
+}
+
+.footer .subscribe .subscribe_box input,
+.footer .subscribe .subscribe_box button {
+    outline: none;
+    border: none;
+}
+
+.footer .subscribe .subscribe_box {
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 4px;
+}
+
+.footer .subscribe .subscribe_box input {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: transparent;
+    width: 59%;
+}
+
+.footer .subscribe .subscribe_box button {
+    border-radius: 50px;
+    background-color: #222;
+    color: white;
+    padding: 8px 14px;
+}
+
+.subfooter {
+    margin-top: 50px;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.subfooter ul.subf_menu_list {
+    display: flex;
+    float: right;
+    margin: 0;
+}
+
+.subfooter p {
+    margin: 0;
+}
+
+.subfooter ul.subf_menu_list li {
+    margin-right: 10px;
+}
